@@ -44,6 +44,12 @@ header a:hover{
     width: 100%;
 }
 
+.overview-hero{
+    background-color: #E2E8F0;
+    margin: 0;
+    padding: 2% 0%;
+}
+
 .overview-hero .container{
     display: flex;
 }
@@ -65,6 +71,20 @@ header a:hover{
     width: 100%;
 }
 
+.learn-about{
+    padding: 3% 0%;
+}
+
+.learn-about h2{
+    font-size: 24px;
+    color: #48BB78;
+}
+
+.learn-about h3{
+    font-size: 21px;
+    color: #48BB78;
+}
+
 .cards{
     display: grid;
     grid-template-columns: auto auto auto;
@@ -73,46 +93,66 @@ header a:hover{
 
 .card{
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    border-radius: 8px;
+    border-color: #E2E8F0;
+    border-radius: 5px;
     padding: 5px 20px;
     margin: 10px;
 }
 
 .card img{
     width:100%;
-  }
+}
+
+.testing{
+    background-color: #4A5568;
+    color: white;
+}
 
 .testing a{
-    background-color: green;
+    background-color: #48BB78;
     color: white;
     text-align: center;
     text-decoration: none;
     padding: 10px 20px;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 .testing .container{
-    display: flex;
+    display: grid;
+    grid-template-columns: 70% 20%;
+    gap: 20px;
     justify-content: center;
     align-items: center;
+    padding: 5% 0%;
 }
 
-.testing .container > div{
-    margin: 20px;
-}
 
 .testing-desciption{
-    flex-basis: 60%;
+    grid-column: 1;
 }
 
 .cta{
-    flex-basis: 30%;
+    grid-column: 2;
 }
 
+.stories{
+    padding: 10px 0px;
+}
 
+.stories h2{
+    color: #5A67D8;
+}
+
+.stories h3{
+    font-size: 18px;
+}
 
 .stories img{
     border-radius: 50%;
+}
+
+.stories a{
+    text-decoration: none;
 }
 
 article{
@@ -137,11 +177,15 @@ article img{
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: #48BB78;
 }
 
 .newsletter .container{
     width: 40%;
     height: auto;
+    padding-bottom: 5%;
+    padding-top: 2%;
+    color: white;
 }
 
 .newsletter h3{
@@ -157,9 +201,24 @@ article img{
 .newsletter input{
     width: 100%;
     border-radius: 8px;
+    border-width: 0;
+    padding: 20px 10px;
+    font-size: 18px;
 }
+
 
 .newsletter button{
     border-radius: 8px;
+    background-color: #5A67D8;
+    border-width: 0;
+    padding: 20px 0px;
+    color: white;
+    font-size: 18px;
+}
+
+footer{
+    background-color: #4A5568;
+    color: white;
+    padding: 10px 0px;
 }
 
