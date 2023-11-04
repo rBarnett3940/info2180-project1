@@ -1,7 +1,41 @@
 /* Add your CSS to this file */
 body {
     margin: 0;
-    font-size: 16px;
+    font-size: 18px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+    display: grid;
+}
+
+header h1{
+    float: left;
+    background-color: white;
+    font-size: 18px;
+    padding: 15px 10px;
+}
+
+header ul{
+    display: flex;
+    float: right;
+    list-style-type: none;
+    overflow: hidden;
+}
+
+header li{
+    display: block;
+    text-align: center;
+    padding: 10px 10px;
+}
+
+header li a{
+    text-decoration: none;
+}
+
+header a{
+    color: #6b7280;
+}
+
+header a:hover{
+    color: #5A67D8;
 }
 
 .container {
@@ -9,3 +43,123 @@ body {
     max-width: 960px;
     width: 100%;
 }
+
+.overview-hero .container{
+    display: flex;
+}
+
+.overview-hero .container > div{
+    margin: 20px;
+}
+
+.overview-hero-image{
+    flex-basis: 30%;
+}
+
+.overview-hero-text{
+    flex-basis: 60%;
+}
+
+.overview-hero-image img{
+    border-radius: 8px;
+    width: 100%;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 5px 20px;
+}
+
+.card{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 8px;
+    padding: 5px 20px;
+    margin: 10px;
+}
+
+.card img{
+    width:100%;
+  }
+
+.testing a{
+    background-color: green;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.testing .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.testing .container > div{
+    margin: 20px;
+}
+
+.testing-desciption{
+    flex-basis: 60%;
+}
+
+.cta{
+    flex-basis: 30%;
+}
+
+
+
+.stories img{
+    border-radius: 50%;
+}
+
+article{
+    display: grid;
+    grid-template-columns: 20% 70%;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px;
+}
+
+article img{
+    grid-column: 1;
+    width: 100%;
+}
+
+.article-body{
+    grid-column: 2;
+}
+
+.newsletter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.newsletter .container{
+    width: 40%;
+    height: auto;
+}
+
+.newsletter h3{
+    text-align: center;
+}
+
+.newsletter form{
+    display: grid;
+    grid-template-columns: 65% 30%;
+    column-gap: 5%;
+}
+
+.newsletter input{
+    width: 100%;
+    border-radius: 8px;
+}
+
+.newsletter button{
+    border-radius: 8px;
+}
+
