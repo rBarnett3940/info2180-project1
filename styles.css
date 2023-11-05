@@ -3,19 +3,26 @@ body {
     margin: 0;
     font-size: 18px;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
-    display: grid;
+}
+
+header .container{
+    display: flex;
+    align-items: center;
 }
 
 header h1{
-    float: left;
     background-color: white;
     font-size: 18px;
-    padding: 15px 10px;
+    padding: 15px 5px;
+    width: 100%;
+}
+
+header nav{
+    float: right;
 }
 
 header ul{
     display: flex;
-    float: right;
     list-style-type: none;
     overflow: hidden;
 }
@@ -23,7 +30,7 @@ header ul{
 header li{
     display: block;
     text-align: center;
-    padding: 10px 10px;
+    padding: 0px 10px;
 }
 
 header li a{
@@ -52,6 +59,8 @@ header a:hover{
 
 .overview-hero .container{
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .overview-hero .container > div{
@@ -71,7 +80,7 @@ header a:hover{
     width: 100%;
 }
 
-.learn-about{
+.learn-about {
     padding: 3% 0%;
 }
 
@@ -85,9 +94,10 @@ header a:hover{
     color: #48BB78;
 }
 
-.cards{
+.container .cards{
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 10px;
     padding: 5px 20px;
 }
 
@@ -113,14 +123,14 @@ header a:hover{
     color: white;
     text-align: center;
     text-decoration: none;
-    padding: 10px 20px;
+    padding: 5% 5%;
     border-radius: 5px;
 }
 
 .testing .container{
     display: grid;
     grid-template-columns: 70% 20%;
-    gap: 20px;
+    gap: 5%;
     justify-content: center;
     align-items: center;
     padding: 5% 0%;
@@ -194,7 +204,7 @@ article img{
 
 .newsletter form{
     display: grid;
-    grid-template-columns: 65% 30%;
+    grid-template-columns: auto auto;
     column-gap: 5%;
 }
 
@@ -202,16 +212,17 @@ article img{
     width: 100%;
     border-radius: 8px;
     border-width: 0;
-    padding: 20px 10px;
+    padding: 5% 2%;
     font-size: 18px;
 }
 
 
 .newsletter button{
+    width: 100%;
     border-radius: 8px;
     background-color: #5A67D8;
     border-width: 0;
-    padding: 20px 0px;
+    padding: 5% 0%;
     color: white;
     font-size: 18px;
 }
@@ -219,6 +230,6 @@ article img{
 footer{
     background-color: #4A5568;
     color: white;
-    padding: 10px 0px;
+    padding: 10px 5px;
 }
 
